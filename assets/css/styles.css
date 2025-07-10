@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+font-family:  "Lunasima", sans-serif;
+font-weight: 300;;
+}
+
+
+/*NAV*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #c1c1c1;
+    position: sticky;
+    top:0;
+    z-index:2;
+}
+
+nav a{
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5rem;
+    list-style-type: none;
+}
+
+/*HEADER*/
+header{
+    background: url('../imgs/img-main.jpeg');
+    height: 30dvh;
+    background-position: center;
+    background-size: cover;
+    color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+/*CONTENEDOR INDEX*/
+main{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    background-color: green;
+}
+
+main h2{
+    padding: 3rem;
+    color: black;
+}
+
+#vitrina{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+     background-color: red;
+}
+
+/*CONTENEDOR Alquiler todos*/
+#alquiler-total{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+/*CONTENEDOR Venta todos*/
+#venta-total{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+
+/* CARD*/
+.card{
+    width: 100%;
+    height: 70vh;
+    background-color: #f1f1f1;
+    padding: .1rem;
+    margin: .1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px ;
+    transition: all .9s ease-in-out;
+    border: 1px solid #e1e1e1;
+}
+
+.card:hover{
+    transform: scale(1.01);
+    opacity: .5;
+ 
+
+}
+
+.card-image{
+    width: 90%;
+    background-color: #b1b1b1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .1rem;
+    border-radius: 5px;
+
+}
+
+.card-body{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+img{
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 5px;
+}
+
+/* GRADIENTE*/
+footer{
+    position: sticky;
+    bottom: 0;
+    /* background-color: white; */
+    background: linear-gradient(360deg, #fff 1%, transparent 100%);
+    opacity: .9;
+    height: 15dvh;
+}
+
+.allowed, .not-allowed, .divisa{
+    font-weight: 700;
+}
+.allowed{
+color:green;
+}
+
+.not-allowed{
+    color:red;
+}
+
+.divisa{
+    font-size: .7rem;
+    letter-spacing: 2px;
+
+}
+
+@media (min-width: 576px){
+    .card{
+         width: 47%;
+        padding: .1rem;
+        margin: .5rem 0;
+    }
+}
+
+@media (min-width: 767px){
+        .card{
+         width: 45%;
+        
+    }
+}
+
+
+@media (min-width: 992px){
+            .card{
+         width: 35%;
+         
+
+    }
+}
+
+@media (min-width: 1200px){
+            .card{
+         width: 30%;
+    }
+}
