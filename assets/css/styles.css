@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +6,7 @@
 }
 
 html {
-  font-family: "Lunasima", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 300;
 }
 /*imagen genérico*/
@@ -26,6 +25,7 @@ nav {
   padding: 1rem;
   background-color: #c1c1c1;
   position: sticky;
+  box-shadow: inset 2px 2px 5px #333;
   top: 0;
   z-index: 2;
 }
@@ -61,11 +61,11 @@ header {
   height: 25dvh;
   background-position: center;
   background-size: cover;
-  color: #ddd;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .hero{
@@ -209,14 +209,24 @@ main {
     opacity: .6;
 }
 
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding:1rem;
+  margin-bottom: 2rem;
+}
+
 /* GRADIENTE*/
-footer {
+.fade-footer {
   position: sticky;
   bottom: 0;
   /* background-color: white; */
-  background: linear-gradient(360deg, #fff 1%, transparent 100%);
+  background: linear-gradient(360deg, white 30%, transparent 100%);
   opacity: 0.9;
-  height: 15dvh;
+  height: 6dvh;
+  color: #333;
 }
 
 /*animación*/
@@ -243,6 +253,10 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  header{
+    font-size: 1.4rem;
+  }
+
   .boton {
     align-self: flex-start;
     margin: 1rem;
@@ -255,7 +269,7 @@ img {
 }
 
   .card-body {
-  height: 30vh;
+  height: 37vh;
 }
 }
 

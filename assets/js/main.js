@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
 })
 
 */
-vitrinaVenta ? vitrinaVenta.innerHTML = displayPropiedadesLoop(propVenta, 3)  : 'is null';
-vitrinaAlq ? vitrinaAlq.innerHTML = displayPropiedadesLoop(propAlquiler, 3) : 'is null';
+vitrinaVenta ? vitrinaVenta.innerHTML = displayPropiedadesLoop(propVenta, 4)  : 'is null';
+vitrinaAlq ? vitrinaAlq.innerHTML = displayPropiedadesLoop(propAlquiler, 4) : 'is null';
 totalVenta ? totalVenta.innerHTML = displayPropiedadesLoop(propVenta, propVenta.length) : 'is null';
 totalAlq ? totalAlq.innerHTML = displayPropiedadesLoop(propAlquiler, propAlquiler.length) : 'is null';
 
