@@ -12,12 +12,12 @@ const displayPropiedadesLoop = (obj, amount) => {
     theHtml += `<div class="card">
 
     <div class="card-image">
-    <img src=${obj[i].src} alt= ${obj[i].nombre}: ${obj[i].descripcion}>
+    <img src=${obj[i].src} alt= '${obj[i].nombre}: ${obj[i].descripcion}'>
     </div>
 
     <div class="card-body">
     
-    <h3>${obj[i].nombre}</h3>
+    <h3 class ="card-title">${obj[i].nombre}</h3>
     <p>${obj[i].descripcion}</p>
     <p>${obj[i].ubicacion}</p>
 

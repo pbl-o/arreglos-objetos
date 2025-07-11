@@ -1,6 +1,7 @@
 import propAlquiler from "./data/alquiler.js";
 import propVenta from "./data/venta.js";
-import displayPropiedadesLoop  from "./template.js";
+import displayPropiedadesLoop  from "./templateCard.js";
+import heroCard from "./heroCard.js";
 
 
 const vitrinaVenta = document.getElementById("vitrina-venta");
@@ -23,12 +24,7 @@ vitrinaAlq ? vitrinaAlq.innerHTML = displayPropiedadesLoop(propAlquiler, 3) : 'i
 totalVenta ? totalVenta.innerHTML = displayPropiedadesLoop(propVenta, propVenta.length) : 'is null';
 totalAlq ? totalAlq.innerHTML = displayPropiedadesLoop(propAlquiler, propAlquiler.length) : 'is null';
 
-
-
-vitrinaVenta.addEventListener('click', (e)=>{
-  console.log(e.target);
-})
-
-
+//visuaizar elemento clickeado en pantalla
+heroCard();
 
 
