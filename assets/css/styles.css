@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +8,7 @@
 html {
   font-family: "Quicksand", sans-serif;
   font-weight: 300;
+  
 }
 /*imagen genérico*/
 img {
@@ -18,8 +19,51 @@ img {
 }
 
 /*NAV*/
-nav {
+.nav-mobile {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c1c1c1;
+  position: sticky;
+  box-shadow: inset 2px 2px 5px #333;
+  z-index: 2;
+  padding: 0.5rem;
+}
+
+.nav-mobile a{
+  text-decoration: none;
+  color: #333;
+}
+
+#boton-menu-desplegable {
+  padding: 0.3rem .6rem;
+  background-color: #d1d1d1;
+  border-radius: 3px;
+  border: 1px solid #a1a1a1;
+  cursor: pointer;
+}
+
+#desplegable-body {
+  position: absolute;
+  top: 3.5rem;
+  right: 1rem;
+  background-color: white;
+  transition: all 0.9s ease-in-out;
+  font-weight: 700;
+  padding: 2rem;
+  opacity: 0;
+}
+.desplegable {
+  display: flex;
+  flex-direction: column;
+}
+
+.desplegable a {
+  color: #333;
+  text-decoration: none;
+}
+
+nav {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
@@ -28,6 +72,7 @@ nav {
   box-shadow: inset 2px 2px 5px #333;
   top: 0;
   z-index: 2;
+  display: none;
 }
 
 nav a {
@@ -37,14 +82,12 @@ nav a {
   transition: all 0.3s ease-in-out;
 }
 
-nav a:hover{
+nav a:hover {
   color: #fff;
   background-color: #b1b1b1;
-  padding: .2rem .5rem;
+  padding: 0.2rem 0.5rem;
   border: none;
   border-radius: 3px;
-
-
 }
 
 ul {
@@ -68,42 +111,41 @@ header {
   font-size: 1rem;
 }
 
-.hero{
-    position: absolute;
-    width:100%;
-    height: 100%;
-    top:0;
-    left:-100%;
-    background-color: #111;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: .95;
-    transition: all .9s ease-in-out;
+.hero {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  background-color: #111;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.95;
+  transition: all 0.9s ease-in-out;
+
 }
 
-
-.cover{
+.cover {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.cover-text{
-    color: white;
-    font-size: 2rem;
-    margin-top: 5rem;
-
-
+.cover-text {
+  color: white;
+  font-size: 1.1rem;
+  margin-top: 9rem;
 }
 
-.cover-img{
-object-fit: contain;
-transform: scale(1.4);
-padding: 1rem;
+.cover-img {
+  object-fit: contain;
+  transform: scale(1.8);
+  padding: 1rem;
 }
+
 
 /*CONTENEDOR INDEX*/
 main {
@@ -164,7 +206,7 @@ main {
 
 .card-body {
   width: 90%;
-  height: 45vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -192,29 +234,29 @@ main {
 }
 
 .boton {
-  margin: 1rem 0;
+  margin-top: 2rem;
   background-color: #000;
   color: #eee;
   text-decoration: none;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   font-weight: 500;
   border-radius: 5px;
-    box-shadow: inset 1px 1px 5px #ddd;
-    font-size: .8rem;
-    font-weight: 700;
-      transition: all 0.3s ease-in-out;
+  box-shadow: inset 1px 1px 5px #ddd;
+  font-size: 0.8rem;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
 }
 
-.boton:hover{
-    opacity: .6;
+.boton:hover {
+  opacity: 0.6;
 }
 
-footer{
+footer {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  padding:1rem;
+  padding: 1rem;
   margin-bottom: 2rem;
 }
 
@@ -245,7 +287,18 @@ footer{
   }
 }
 /*MEDIA QUERIES*/
+
 @media (min-width: 576px) {
+
+
+  nav {
+    display: flex;
+  }
+
+  .nav-mobile {
+    display: none;
+  }
+
   #vitrina-venta,
   #vitrina-alquiler,
   #alquiler-total,
@@ -253,7 +306,7 @@ footer{
     grid-template-columns: repeat(2, 1fr);
   }
 
-  header{
+  header {
     font-size: 1.4rem;
   }
 
@@ -262,14 +315,19 @@ footer{
     margin: 1rem;
   }
 
-img {
+  img {
+    height: 35dvh;
+  }
 
-  height: 40dvh;
 
+  .cover-text {
+  font-size: 2rem;
 }
 
-  .card-body {
-  height: 37vh;
+
+  .boton-close{
+
+margin-bottom: 5rem;
 }
 }
 
@@ -279,23 +337,19 @@ img {
   #alquiler-total,
   #venta-total {
     grid-template-columns: repeat(3, 1fr);
-     margin-top: .1rem;
+    margin-top: 0.1rem;
   }
 
   img {
+    height: 40dvh;
+  }
 
-  height: 40dvh;
-
-}
-
-  .card-body {
-  height: 35vh;
-}
 
 
 }
 
 @media (min-width: 992px) {
+
   #vitrina-venta,
   #vitrina-alquiler,
   #alquiler-total,
@@ -308,7 +362,5 @@ img {
     margin: 0 3rem;
   }
 
-    .card-body {
-  height: 30vh;
-}
+
 }
