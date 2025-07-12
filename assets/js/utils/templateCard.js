@@ -1,3 +1,14 @@
+/*Renderizado de elemento card:
+
+Se crea una función cuyos argumentos representan la clase a procesar y la cantidad de instancias a generar.
+Todas las instancias se almacenan en la función theHtml, a la cual se le agrega una instancia de render de card
+posicionando formatando los datos solicitados a alquiler.js o venta.js;
+Al final del proceso theHtml tendra un template de tarjeta renderizado la cantidad de instancias asignadas al bucle.  
+
+En el caso del index 3 cards para la categoría venta y 3 cards para la categoría alquiler.
+*/
+
+
 //icons:
 const forbbidenSmoke = `<i class="fa-solid fa-ban-smoking"></i>`;
 const forbidden = `<i class="fa-solid fa-ban"></i>`;

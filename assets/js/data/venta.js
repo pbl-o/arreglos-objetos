@@ -1,3 +1,33 @@
+/* La información de las listas fue creada con IA, utilizando el modelo de objeto entregado
+en la plantilla de evaluación:
+
+const propiedad_alquiler =[
+{
+nombre: '',
+src: '',
+descripcion: '',
+ubicacion: '',
+habitaciones: 0,
+costo: 0,
+smoke: false,
+pets: true
+}
+]
+
+Consideraciones previas:
+
+se agregó la llave banos (baños) debido a que el modelo solo muestra inmuebles de uso residencial, lo implica
+necesriamente al menos un baño por propiedad, a diferencia de inmuebeles para uso comercial u otros usos.
+En caso contrario habitaciones podría ser una subclase con dos llaves: habitaciones y banos, teniendo como
+condición de renderizado la presencia de baños (sea este un valor numérico o una relación booleana).
+
+prospecto de render:
+(`banos > 0 || banos === true ? '${clase[i].habitaciones | clase[i].banos.banos' : 'habitaiciones: ${clase[i].habitaciones} '`)
+
+
+*/
+
+
 const propVenta = [
   {
     nombre: "Departamento en Providencia",
@@ -110,6 +140,5 @@ const propVenta = [
     pets: true,
   },
 ];
-
 
 export default propVenta;
