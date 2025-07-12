@@ -8,8 +8,7 @@ Al final del proceso theHtml tendra un template de tarjeta renderizado la cantid
 En el caso del index 3 cards para la categoría venta y 3 cards para la categoría alquiler.
 */
 
-
-//icons:
+//Iconos utilizados en renderizado de la plantilla card. Para proyectos con una mayor cantidad de iconos, consideraré un archivo adicional con un array o clase con todos los iconos necesarios. (tipo iconos.js)
 const forbbidenSmoke = `<i class="fa-solid fa-ban-smoking"></i>`;
 const forbidden = `<i class="fa-solid fa-ban"></i>`;
 const smoke = `<i class="fa-solid fa-smoking"></i>`;

@@ -2,7 +2,6 @@
 si el elemento seleccionado tiene src renderiza una tarjeta para ver el elemento con mayor detalle:
 imagen + descripción de la imagen (usadno el texto alternativo de la imagen). */
 
-
 const heroCard = () => {
   const heroDiv = document.querySelector(".hero");
   let changeState = false;

@@ -4,16 +4,15 @@
 
 */
 
-
 const botonMenuDisplay = (listened, canvas) => {
   let btnState = false;
 
   listened.addEventListener("click", () => {
     btnState = !btnState;
-    if(btnState){
-      canvas.style.opacity =".9"; 
-    }else{
-      canvas.style.opacity ="0"; 
+    if (btnState) {
+      canvas.style.opacity = ".9";
+    } else {
+      canvas.style.opacity = "0";
     }
 
     // si el menu se deja abierto por más de 10 segundos
