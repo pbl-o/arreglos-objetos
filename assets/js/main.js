@@ -22,10 +22,15 @@ const contendor = document.querySelector(".contenedor-main");
 en la medida al momento de cargar el documento:
 
 document.addEventListener('DOMContentLoaded', ()=>{
-  (selectedElement) ? selectedElement.innerHTML = ()=> ...
-})
+  const nombre = document.querySelector('class/id/tag') x (cantidad de veces necesaria)
+  (selectedElement) ? selectedElement.innerHTML = ()=> ... x (cantidad de metodos necesaria)
+});
+
+No obstante, probé lo que está abajo y funcionaba de igual manera, se corrobora la presencia del elemento en el documento y se inyecta el resultado de la función en el elemento html.
+
 
 */
+//Renderizado de galerias de cards.
 vitrinaVenta
   ? (vitrinaVenta.innerHTML = displayPropiedadesLoop(propVenta, 3))
   : "is null";
