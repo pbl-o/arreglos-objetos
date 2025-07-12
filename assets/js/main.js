@@ -26,10 +26,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
 */
 vitrinaVenta
-  ? (vitrinaVenta.innerHTML = displayPropiedadesLoop(propVenta, 4))
+  ? (vitrinaVenta.innerHTML = displayPropiedadesLoop(propVenta, 3))
   : "is null";
 vitrinaAlq
-  ? (vitrinaAlq.innerHTML = displayPropiedadesLoop(propAlquiler, 4))
+  ? (vitrinaAlq.innerHTML = displayPropiedadesLoop(propAlquiler, 3))
   : "is null";
 totalVenta
   ? (totalVenta.innerHTML = displayPropiedadesLoop(propVenta, propVenta.length))

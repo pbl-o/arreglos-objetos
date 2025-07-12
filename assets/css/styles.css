@@ -33,15 +33,26 @@ img {
 .nav-mobile a{
   text-decoration: none;
   color: #333;
+
 }
 
 #boton-menu-desplegable {
   padding: 0.3rem .6rem;
-  background-color: #d1d1d1;
+  background-color: #b1b1b1;
   border-radius: 3px;
-  border: 1px solid #a1a1a1;
+  border: none;
   cursor: pointer;
+
+  color: #333;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  transition: all .2s ease-in-out;
 }
+
+#boton-menu-desplegable:hover{
+  filter:invert(100%);
+} 
 
 #desplegable-body {
   position: absolute;
@@ -52,15 +63,23 @@ img {
   font-weight: 700;
   padding: 2rem;
   opacity: 0;
+  border-radius: 5px;
+
 }
-.desplegable {
+.desplegable {  
   display: flex;
   flex-direction: column;
+  
 }
 
 .desplegable a {
   color: #333;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.desplegable a:hover{
+  color: #777;
 }
 
 nav {
@@ -141,6 +160,8 @@ header {
 }
 
 .cover-img {
+  width: 30dvw;
+  height: 30dvh;
   object-fit: contain;
   transform: scale(1.8);
   padding: 1rem;
@@ -156,7 +177,7 @@ main {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
 }
 
 #vitrina-venta,
@@ -166,10 +187,13 @@ main {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(1fr);
-  margin-top: 2rem;
-  padding: 0 1rem;
-
+  margin: .5rem 0;
+  padding: .5rem;
   gap: 1rem;
+}
+
+.vitrina-title{
+  padding: .5rem;
 }
 
 /* CARD*/
@@ -215,9 +239,11 @@ main {
 }
 
 /* CARD ICONS*/
+
+
 .allowed,
 .not-allowed,
-.divisa {
+.divisa{
   font-weight: 700;
 }
 .allowed {
@@ -233,8 +259,19 @@ main {
   letter-spacing: 2px;
 }
 
+/*divisoria*/
+.divisoria{
+width: 100%;
+color: #c1c1c1;
+}
+
+.divisoria hr{
+  margin: 2.5%;
+  margin-bottom: 1rem;
+}
+
 .boton {
-  margin-top: 2rem;
+  margin-top: 1.4rem;
   background-color: #000;
   color: #eee;
   text-decoration: none;
@@ -312,7 +349,7 @@ footer {
 
   .boton {
     align-self: flex-start;
-    margin: 1rem;
+    margin: 1.05rem;
   }
 
   img {
